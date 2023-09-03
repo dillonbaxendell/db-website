@@ -1,12 +1,31 @@
 /* Style the header container */
-.header-content {
-    padding-right: 5rem;
-    padding-left: 5rem;
+.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #efe3d7;
     border-bottom: 2px solid black;
+}
+
+#header {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    background-color: #efe3d7;
+}
+
+#about {
+    padding-right: 15rem;
+    padding-left: 15rem;
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#experience {
+    padding-right: 15rem;
+    padding-left: 15rem;
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /* Style the left content (title, subtitle, button) */
@@ -16,22 +35,44 @@
 }
 
 p {
+    font-size: 1rem;
+    font-family: "Roboto Mono", sans-serif; 
+    line-height: 2rem;
+}
+
+h3 {
     font-size: 1.5rem;
     font-family: "Roboto Mono", sans-serif;
 }
 
 /* Style the title */
 h1 {
-    background-color: #ffd7a1;
     font-size: 5rem;
     font-family: "Exo 2 Bold", sans-serif;
     text-transform: uppercase;
 }
 
+#name-title {
+    background-color: #ffd7a1;
+}
+
+#about-title {
+    background-color: #ffd7a1;
+    line-height: 1.2rem;
+    width: 10rem;
+}
+
+#experience-title {
+    background-color: #ffd7a1;
+    line-height: 1.2rem;
+    width: 17rem;
+}
+
 /* Style the subtitle */
 h2 {
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: "Exo 2 Bold", sans-serif;
+    /* text-transform: uppercase; */
 }
 
 #getInTouch {
