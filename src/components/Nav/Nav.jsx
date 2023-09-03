@@ -10,16 +10,16 @@ function Nav() {
   return (
     <div className="nav">
       <Link to="/home">
-        <h2 className="nav-title">Prime Solo Project</h2>
+        <h2 className="nav-title">&lt;db/&gt;</h2>
       </Link>
       <div>
         {/* If no user is logged in, show these links */}
-        {!user.id && (
+        {/* {!user.id && (
           // If there's no user, show login/registration links
           <Link className="navLink" to="/login">
             Login / Register
           </Link>
-        )}
+        )} */}
 
         {/* If a user is logged in, show these links */}
         {user.id && (
@@ -38,6 +38,21 @@ function Nav() {
 
         <Link className="navLink" to="/about">
           About
+        </Link>
+        <Link className="navLink" to="/about">
+          Experience
+        </Link>
+        <Link className="navLink" to="/about">
+          Work
+        </Link>
+        <Link className="navLink" to="/about">
+          Clients
+        </Link>
+        <Link className="navLink" to="/about">
+          Testimonials
+        </Link>
+        <Link className="navLink" to="/about">
+          Contact
         </Link>
       </div>
     </div>

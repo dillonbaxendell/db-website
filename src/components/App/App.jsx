@@ -19,6 +19,7 @@ import InfoPage from '../InfoPage/InfoPage';
 import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
+import HomePage from '../HomePage/HomePage';
 
 import './App.css';
 
@@ -46,6 +47,14 @@ function App() {
             path="/about"
           >
             <AboutPage />
+          </Route>
+
+          <Route
+            // shows HomePage at all times (logged in or not)
+            exact
+            path="/home"
+          >
+            <HomePage />
           </Route>
 
           {/* For protected routes, the view could show one of several things on the same route.
@@ -96,7 +105,7 @@ function App() {
             }
           </Route>
 
-          <Route
+          {/* <Route
             exact
             path="/home"
           >
@@ -108,7 +117,7 @@ function App() {
               // Otherwise, show the Landing page
               <LandingPage />
             }
-          </Route>
+          </Route> */}
 
           {/* If none of the other routes matched, we will show a 404. */}
           <Route>

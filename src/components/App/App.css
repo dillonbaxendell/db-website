@@ -18,25 +18,25 @@ img {
 Container
 -------------------------------------------------------------------------------- */
 
-.container {
+/* .container {
   padding: 20px;
-}
+} */
 
 /* --------------------------------------------------------------------------------
 Button
 -------------------------------------------------------------------------------- */
 
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-color: #014041;
-  border-width: 1px 1px 3px;
-  border-radius: 4px;
-  background-color: #00acb0;
-  color: #f8f8f8;
-  font-size: 1.1rem;
-  outline: 0;
-  cursor: pointer;
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px 30px;
+  color: black; /* Text color */
+  text-decoration: none; /* Remove underlines for links */
+  display: inline-block; /* Make it an inline block element */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Roboto Mono", sans-serif;
+  text-transform: uppercase;
 }
 
 .btn_sizeMin {
@@ -55,8 +55,9 @@ Button
 }
 
 .btn:hover {
-  background-color: #008183;
+  background-color: #f9b19f;
   text-decoration: none;
+  color: black;
 }
 
 /* This line makes the "Register" and "Login" buttons look like links */
@@ -109,4 +110,24 @@ Form Treatment
 input {
   margin: 5px;
   margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------------------------------
+Fonts
+-------------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Exo 2 Bold'; /* The name you want to use for this font family */
+  src: url('/public/fonts/Exo_2/static/Exo2-Bold.ttf') format('truetype');
+  /* Add more formats if you have them */
+  font-weight: normal; /* Adjust as needed */
+  font-style: normal; /* Adjust as needed */
+}
+
+@font-face {
+  font-family: 'Roboto Mono'; /* The name you want to use for this font family */
+  src: url('/public/fonts/Roboto_Mono/static/RobotoMono-Light.ttf') format('truetype');
+  /* Add more formats if you have them */
+  font-weight: normal; /* Adjust as needed */
+  font-style: normal; /* Adjust as needed */
 }
