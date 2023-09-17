@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.css";
+import Experiences from "./Experiences/Experiences";
 
 // This is one of our simplest components
 // It doesn't have local state
@@ -63,6 +64,7 @@ function HomePage() {
       <div className="content" id="experience">
         <div>
           <h2 id="experience-title">EXPERIENCE</h2>
+          <Experiences />
         </div>
       </div>
     </div>

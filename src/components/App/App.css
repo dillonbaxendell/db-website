@@ -131,3 +131,11 @@ Fonts
   font-weight: normal; /* Adjust as needed */
   font-style: normal; /* Adjust as needed */
 }
+
+@font-face {
+  font-family: 'Exo 2'; /* The name you want to use for this font family */
+  src: url('/public/fonts/Exo_2/static/Exo2-Medium.ttf') format('truetype');
+  /* Add more formats if you have them */
+  font-weight: normal; /* Adjust as needed */
+  font-style: normal; /* Adjust as needed */
+}
